@@ -29,14 +29,12 @@ const OrderEditing = () => {
 
   useEffect(() => {
     if (orderDetail === undefined) {
-      console.log(`dispatch lấy dữ liệu`);
       dispatch(getOrderDetail(orderId));
     }
   }, []);
 
   const getOrderEdit = () => {
     if (getDetail !== null && getDetail.data !== null) {
-      console.log(`use selecter lấy dữ liệu`, getDetail);
       setOrderData(getDetail?.data?.order);
     }
   };

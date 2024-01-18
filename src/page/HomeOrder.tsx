@@ -39,7 +39,6 @@ const HomeOrder: React.FC = () => {
   };
 
   const handleSearch = (searchData: SearchData) => {
-    console.log(searchData);
     dispatch(getSearchProducts(searchData));
     getListOrder();
   };
