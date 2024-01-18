@@ -127,7 +127,7 @@ const OrderAdding: React.FC = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Order Add</h1>
+      <h2>Order Add</h2>
       <form className="w-75 m-auto border p-4 mt-4 rounded-4 bg-opacity-10 bg-secondary">
         <div className="input-group mb-3">
           <label className="input-group-text" style={{ width: 150 }}>

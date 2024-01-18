@@ -2,11 +2,8 @@ import React, { useEffect, useState } from "react";
 import OrderList from "../components/OrderList";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  getOrders,
   getSearchProducts,
-  selectOrderList,
   selectProductSearch,
-  selectSuccess,
   setSuccess,
 } from "../features/orderSlice";
 import SearchOrder from "../components/SearchOrder";
@@ -16,8 +13,6 @@ import { SearchData } from "../interface/iSearchData";
 
 const HomeOrder: React.FC = () => {
   const dispatch = useDispatch();
-  const productList = useSelector(selectOrderList);
-  const success = useSelector(selectSuccess);
   const [products, setProducts] = useState<IOrder[]>([]);
   const orderSearch = useSelector(selectProductSearch);
   const [currentPage, setCurrentPage] = useState<number>(1);

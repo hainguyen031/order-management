@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getOrderDetail, selectOrderDetail } from "../features/orderSlice";
 import { IOrderDetail } from "../interface/iOrderDetail";
 import { formatDate } from "../format/formatDate";
@@ -8,7 +8,6 @@ import BtnBackList from "../components/BtnBackList";
 
 const OrderDetail: React.FC = () => {
   const { orderId } = useParams();
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const getDetail = useSelector(selectOrderDetail);
   const [orderDetail, setOrderDetail] = useState<IOrderDetail[]>([]);
