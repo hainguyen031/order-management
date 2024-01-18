@@ -38,7 +38,6 @@ const OrderList: React.FC<Props> = (props) => {
       if (result.isConfirmed) {
         dispatch(getOrderDelete(id));
         Swal.fire("Deleted!", "This order have been cleared.", "success");
-        // navigate("/");
         handleSetRender();
       }
     });
@@ -47,10 +46,7 @@ const OrderList: React.FC<Props> = (props) => {
     <div className="mt-4">
       <div className="border bg-opacity-10 bg-body-secondary rounded-4 w-75 p-4 m-auto">
         <h3>Order list</h3>
-        <table
-          // border={2}
-          className="table table-bordered table-hover align-middle"
-        >
+        <table className="table table-bordered table-hover align-middle">
           <thead className="align-middle table-success">
             <tr>
               <th>Id</th>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import BtnBackList from "../utilities/BtnBackList";
+import BtnBackList from "../components/BtnBackList";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getEditOrder,
@@ -8,7 +8,7 @@ import {
   selectOrderDetail,
 } from "../features/orderSlice";
 import { IOrder } from "../interface/iOrder";
-import BtnSubmit from "../utilities/BtnSubmit";
+import BtnSubmit from "../components/BtnSubmit";
 import Swal from "sweetalert2";
 
 const OrderEditing = () => {

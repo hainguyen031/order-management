@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { ICreateOrder } from "../interface/iCreateOrder";
 import { getCreateOrder } from "../features/orderSlice";
 import { v4 as uuidv4 } from "uuid";
-import BtnBackList from "../utilities/BtnBackList";
-import BtnSubmit from "../utilities/BtnSubmit";
+import BtnBackList from "../components/BtnBackList";
+import BtnSubmit from "../components/BtnSubmit";
 import Swal from "sweetalert2";
 
 const OrderAdding: React.FC = () => {

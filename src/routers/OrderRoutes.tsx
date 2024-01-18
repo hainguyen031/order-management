@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeOrder from '../page/HomeOrder';
-import OrderDetail from '../components/OrderDetail';
-import OrderAdding from '../components/OrderAdding';
-import OrderEditing from '../components/OrderEditing';
+import OrderDetail from '../page/OrderDetail';
+import OrderAdding from '../page/OrderAdding';
+import OrderEditing from '../page/OrderEditing';
 
 
 const OrderRoutes = () => {

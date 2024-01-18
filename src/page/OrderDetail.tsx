@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getOrderDetail, selectOrderDetail } from "../features/orderSlice";
 import { IOrderDetail } from "../interface/iOrderDetail";
 import { formatDate } from "../format/formatDate";
-import BtnBackList from "../utilities/BtnBackList";
+import BtnBackList from "../components/BtnBackList";
 
 const OrderDetail: React.FC = () => {
   const { orderId } = useParams();
